@@ -7,7 +7,7 @@ const cityApi = {
     return axiosClient.get(url, {
       params: {
         _page: 1,
-        _limit: 10,
+        _limit: 62,
       },
     });
   },
