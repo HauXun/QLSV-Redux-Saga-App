@@ -72,11 +72,11 @@ const randomStudentsList = (cities, n) => {
   for (const city of cities) {
     Array.from(new Array(n)).forEach(() => {
       const student = {
-        id: faker.datatype.uuid,
+        id: faker.datatype.uuid(),
         name: faker.name.fullName(),
         age: faker.datatype.number({ min: 18, max: 25}),
         mark: faker.datatype.number({ min: 0, max: 10}),
-        gender: faker.name.sex() === "male" ? "Nữ" : "Nam",
+        gender: faker.name.sex() === "male" ? "male" : "female",
         city: city["code"],
         createdAt: Date.now(),
         updatedAt: Date.now()

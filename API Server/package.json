@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "start": "npm run generate-data && node main.js",
-    "generate-data": "node generate-data.js"
+    "dev": "nodemon main.cjs",
+    "start": "npm run generate-data.cjs && node main.cjs",
+    "generate-data": "node generate-data.cjs"
   },
   "author": "",
   "license": "ISC",
